@@ -3,8 +3,8 @@
 body{
   padding: 0;
   margin: 0;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   overflow: auto;
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.5;
@@ -24,9 +24,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  min-height: 80rem;
-  width: 100%;
-  height: 100%;
 }
 
 #screenSection {
@@ -34,6 +31,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 #cardSection {
