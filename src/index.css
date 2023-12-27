@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+html {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ebe7ef;
+  background: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+  width: 100%;
+  height: 100%;
+}
+
+#screenSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#cardSection {
+  width: 100%;
+  height: 35%;
+  background-image: url("./assets/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #screenSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #cardSection {
+    width: 35%;
+    height: 100vh;
+    flex-direction: column;
+    background-size: auto;
+    align-items: flex-start;
+  }
+}
